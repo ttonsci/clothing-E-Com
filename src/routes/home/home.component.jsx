@@ -1,35 +1,41 @@
 import Directory from '../../components/directory/directory.component';
 
+
+
 const Home = () => {
+
   const categories = [
     {
-      id: 1,
-      title: 'hats',
+      id:1,
+      title:'Hat',
       imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
     },
     {
-      id: 2,
-      title: 'jackets',
+      id:2,
+      title:'Jackets',
       imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
     },
     {
-      id: 3,
-      title: 'sneakers',
+      id:3,
+      title:'Sneakers',
       imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
     },
     {
-      id: 4,
-      title: 'womens',
+      id:4,
+      title:'Womens',
       imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
     },
     {
-      id: 5,
-      title: 'mens',
+      id:5,
+      title:'Mens',
       imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-    },
-  ];
+    }
+  ]
 
-  return <Directory categories={categories} />;
-};
+  return (
+      <Directory categories={categories}/>
+ 
+  );
+}
 
 export default Home;
